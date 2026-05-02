@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Productos</title>
+    <title>Catálogo de Productos — Cárnicos & Abarrotes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,16 +11,17 @@
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-shop me-2"></i>Cárnicos & Abarrotes
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-mark"><i class="bi bi-fire"></i></div>
+                <span class="brand-name">Cárnicos <em>&amp;</em> Abarrotes</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto gap-1">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
@@ -30,110 +31,192 @@
     </nav>
 
     <!-- Hero -->
-    <section class="hero text-white text-center">
-        <div class="container">
-            <h1>Nuestro Catálogo</h1>
-            <p>Productos frescos y de calidad directo para tu negocio</p>
-        </div>
-    </section>
-
-    <!-- Cárnicos -->
-    <section class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">
-                <i class="bi bi-basket2 me-2"></i>Cárnicos
-            </h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="card-icon red">
-                                <i class="bi bi-droplet-fill"></i>
-                            </div>
-                            <h5 class="card-title fw-bold">Res</h5>
-                            <p class="card-text text-muted">Cortes frescos: lomo, costilla, molida. Calidad garantizada por kilo o al por mayor.</p>
-                            <span class="badge-available">Disponible</span>
-                        </div>
-                    </div>
+    <section class="hero hero-small">
+        <div class="hero-glow-1"></div>
+        <div class="container text-center">
+            <div class="hero-content">
+                <div class="hero-eyebrow">
+                    <i class="bi bi-basket2-fill"></i> Catálogo completo
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="card-icon yellow">
-                                <i class="bi bi-star-fill"></i>
-                            </div>
-                            <h5 class="card-title fw-bold">Pollo</h5>
-                            <p class="card-text text-muted">Pollo entero y en piezas. Procesado el mismo día para máxima frescura.</p>
-                            <span class="badge-available">Disponible</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="card-icon gray">
-                                <i class="bi bi-layers-fill"></i>
-                            </div>
-                            <h5 class="card-title fw-bold">Cerdo</h5>
-                            <p class="card-text text-muted">Chuletas, lomo y costillas de cerdo. Selección premium para restaurantes y hogares.</p>
-                            <span class="badge-available">Disponible</span>
-                        </div>
-                    </div>
-                </div>
+                <h1>Nuestros Productos</h1>
+                <p class="hero-subtitle">
+                    Cárnicos frescos y abarrotes de calidad, disponibles por kilo, bulto o al por mayor.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Abarrotes -->
+    <!-- Cárnicos — 3 cards iguales -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">
-                <i class="bi bi-bag-fill me-2"></i>Abarrotes
-            </h2>
+            <!-- Título alineado a la izquierda -->
+            <div class="row mb-2">
+                <div class="col-lg-8">
+                    <p class="section-label">Línea cárnica</p>
+                    <h2 class="section-title">Cárnicos</h2>
+                    <p class="section-desc">Cortes frescos procesados diariamente con los más altos estándares de higiene.</p>
+                </div>
+            </div>
+
+            <!-- Divider decorativo -->
+            <div class="section-divider">
+                <div class="divider-rule"></div>
+                <div class="divider-badge"><i class="bi bi-droplet-fill"></i></div>
+                <div class="divider-rule"></div>
+            </div>
+
+            <!-- 3 cards iguales (col-md-4 cada una) -->
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="card-icon green">
-                                <i class="bi bi-grid-fill"></i>
-                            </div>
-                            <h5 class="card-title fw-bold">Granos y Cereales</h5>
-                            <p class="card-text text-muted">Arroz, frijol, lenteja, maíz. Disponible por bulto o al menudeo.</p>
-                            <span class="badge-limited">Stock limitado</span>
+                <div class="col-md-4 anim-1">
+                    <div class="product-card h-100">
+                        <div class="icon-wrap icon-red">
+                            <i class="bi bi-droplet-fill"></i>
                         </div>
+                        <h5>Res</h5>
+                        <p>Cortes frescos: lomo, costilla, molida. Calidad garantizada por kilo o al por mayor para restaurantes y hogares.</p>
+                        <span class="badge-available">Disponible</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="card-icon blue">
-                                <i class="bi bi-droplet-half"></i>
-                            </div>
-                            <h5 class="card-title fw-bold">Aceites y Condimentos</h5>
-                            <p class="card-text text-muted">Aceite vegetal, sal, azúcar, vinagre y especias. Marcas reconocidas.</p>
-                            <span class="badge-available">Disponible</span>
+                <div class="col-md-4 anim-2">
+                    <div class="product-card h-100">
+                        <div class="icon-wrap icon-yellow">
+                            <i class="bi bi-star-fill"></i>
                         </div>
+                        <h5>Pollo</h5>
+                        <p>Entero y en piezas. Procesado el mismo día para máxima frescura y sabor garantizado en cada pieza.</p>
+                        <span class="badge-available">Disponible</span>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="card-icon gray">
-                                <i class="bi bi-archive-fill"></i>
-                            </div>
-                            <h5 class="card-title fw-bold">Enlatados</h5>
-                            <p class="card-text text-muted">Atún, sardinas, frijoles y vegetales enlatados de distintas marcas.</p>
-                            <span class="badge-available">Disponible</span>
+                <div class="col-md-4 anim-3">
+                    <div class="product-card h-100">
+                        <div class="icon-wrap icon-gray">
+                            <i class="bi bi-layers-fill"></i>
                         </div>
+                        <h5>Cerdo</h5>
+                        <p>Chuletas, lomo y costillas de cerdo. Selección premium para restaurantes y hogares exigentes.</p>
+                        <span class="badge-available">Disponible</span>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Parallax Banner -->
+    <div class="parallax-section"
+         style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&w=1920&q=80');">
+        <div class="parallax-overlay"></div>
+        <div class="container parallax-content text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <span class="hero-eyebrow mb-3 d-inline-flex justify-content-center">
+                        <i class="bi bi-truck"></i> Entrega el mismo día
+                    </span>
+                    <h2 class="parallax-quote">
+                        Del campo a tu mesa,<br><em>el mismo día</em>
+                    </h2>
+                    <div class="parallax-rule mx-auto"></div>
+                    <p class="parallax-sub mb-4">
+                        Recibimos pedidos antes de las 10:00 am y garantizamos entrega en el día. Frescura sin compromiso para tu negocio o familia.
+                    </p>
+                    <a href="contacto.html" class="btn-red">
+                        <i class="bi bi-telephone"></i> Hacer un pedido
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Abarrotes — 3 cards iguales, título centrado -->
+    <section class="section" style="background-color:#f8fafc; border-top:1px solid #e2e8f0; border-bottom:1px solid #e2e8f0;">
+        <div class="container">
+            <!-- Título centrado -->
+            <div class="text-center mb-2">
+                <p class="section-label justify-content-center">Línea de abarrotes</p>
+                <h2 class="section-title">Abarrotes</h2>
+                <p class="section-desc">Productos de primera necesidad disponibles por unidad, caja o bulto.</p>
+            </div>
+
+            <!-- Divider decorativo -->
+            <div class="section-divider">
+                <div class="divider-rule"></div>
+                <div class="divider-badge"><i class="bi bi-bag-fill"></i></div>
+                <div class="divider-rule"></div>
+            </div>
+
+            <!-- 3 cards iguales -->
+            <div class="row g-4">
+                <div class="col-md-4 anim-1">
+                    <div class="product-card h-100">
+                        <div class="icon-wrap icon-green">
+                            <i class="bi bi-grid-fill"></i>
+                        </div>
+                        <h5>Granos y Cereales</h5>
+                        <p>Arroz, frijol, lenteja, maíz. Disponible por bulto o al menudeo según tu necesidad y presupuesto.</p>
+                        <span class="badge-limited">Stock limitado</span>
+                    </div>
+                </div>
+                <div class="col-md-4 anim-2">
+                    <div class="product-card h-100">
+                        <div class="icon-wrap icon-blue">
+                            <i class="bi bi-droplet-half"></i>
+                        </div>
+                        <h5>Aceites y Condimentos</h5>
+                        <p>Aceite vegetal, sal, azúcar, vinagre y especias. Marcas reconocidas y precios competitivos.</p>
+                        <span class="badge-available">Disponible</span>
+                    </div>
+                </div>
+                <div class="col-md-4 anim-3">
+                    <div class="product-card h-100">
+                        <div class="icon-wrap icon-gray">
+                            <i class="bi bi-archive-fill"></i>
+                        </div>
+                        <h5>Enlatados</h5>
+                        <p>Atún, sardinas, frijoles y vegetales enlatados de distintas marcas y presentaciones al por mayor.</p>
+                        <span class="badge-available">Disponible</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <i class="bi bi-c-circle me-1"></i>2025 Cárnicos & Abarrotes — Todos los derechos reservados
+        <div class="footer-main">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="index.html" class="footer-brand-link">
+                            <div class="logo-mark"><i class="bi bi-fire"></i></div>
+                            Cárnicos & Abarrotes
+                        </a>
+                        <p class="footer-about">Distribuimos productos cárnicos y abarrotes de primera calidad. Frescura para tu hogar y negocio.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-3 offset-lg-2">
+                        <p class="footer-heading">Páginas</p>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="productos.html">Productos</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <p class="footer-heading">Contacto</p>
+                        <ul class="footer-links">
+                            <li><i class="bi bi-geo-alt"></i> Calle 45 #23-10, Bogotá, Colombia</li>
+                            <li><i class="bi bi-telephone"></i> +57 300 123 4567</li>
+                            <li><i class="bi bi-envelope"></i> info@carnicosabarrotes.com</li>
+                            <li><i class="bi bi-clock"></i> Lun–Sáb 6:00 am – 6:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; 2025 Cárnicos & Abarrotes — Todos los derechos reservados
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
