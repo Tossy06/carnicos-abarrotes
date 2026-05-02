@@ -1,0 +1,135 @@
+/* =====================
+   VARIABLES Y BASE
+===================== */
+:root {
+    --color-primary:    #c0392b;
+    --color-dark:       #1a1a2e;
+    --color-light:      #f8f9fa;
+    --color-muted:      #6c757d;
+    --shadow-sm:        0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md:        0 8px 20px rgba(0,0,0,0.12);
+    --transition:       0.2s ease;
+    --border-radius:    0.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--color-dark), var(--color-primary));
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* =====================
+   SECCIONES
+===================== */
+.section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-title i {
+    color: var(--color-primary);
+}
+
+/* =====================
+   CARDS
+===================== */
+.card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-icon.red     { color: var(--color-primary); }
+.card-icon.yellow  { color: #e67e22; }
+.card-icon.blue    { color: #2980b9; }
+.card-icon.green   { color: #27ae60; }
+.card-icon.gray    { color: var(--color-muted); }
+
+/* =====================
+   BADGES
+===================== */
+.badge-available {
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 0.35em 0.75em;
+    border-radius: 50px;
+    font-size: 0.75rem;
+}
+
+.badge-limited {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 0.35em 0.75em;
+    border-radius: 50px;
+    font-size: 0.75rem;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+    background-color: var(--color-dark);
+    color: #fff;
+    text-align: center;
+    padding: 1.25rem 0;
+    font-size: 0.85rem;
+}
+
+.footer i {
+    color: var(--color-primary);
+}
