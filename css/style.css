@@ -133,3 +133,34 @@ body {
 .footer i {
     color: var(--color-primary);
 }
+
+/* =====================
+   GALERÍA
+===================== */
+.galeria-item {
+    background-color: var(--color-light);
+    border: 2px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    padding: 2.5rem 1rem;
+    text-align: center;
+    transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.galeria-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--color-primary);
+}
+
+.galeria-item i {
+    font-size: 3rem;
+    color: var(--color-primary);
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.galeria-item p {
+    margin: 0;
+    font-weight: 600;
+    color: var(--color-dark);
+}
